@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: slateblue;
+    display:flex;
+    text-align:center;
+    width:100vw;
+    justify-content: center;
+}
+.game{
+    min-height: 700px;
+    width:700px;
+    background-color: #756fcd;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.operations-selecting{
+    background-color: #7765e6;
+}
+.operations-selecting >* {
+
+    margin:20px;
+}
+.operations button{
+    height:40px;
+    width: 40px;
+    border-radius:5px;
+    font-size:30px;
+    margin:10px;
+}
+.question{
+    font-size:100px;
+    margin:0;
+    font-family:  'Courgette', cursive, latin-ext;
+}
+.answer-boxes button{
+    width:75px;
+    height: 75px;
+}
+.progress{
+    background-color:#806df8;
+}
