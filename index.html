@@ -7,49 +7,60 @@
     <script src="./js/out.js"></script>
     <link rel="stylesheet" href="./css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+    <link href="https://fonts.googleapis.com/css?family=Courgette&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-    <div class="operations-selecting">
-        <span>Choose operation</span>
-        <div class="operations">
-            <button class="addition">+</button>
-            <button class="subtraction">-</button>
-            <button class="multiplication">x</button>
-            <button class="division">:</button>
-        </div>
-        <div class="range">
-            <button class="small">1-10</button>
-            <button class="medium">1-100</button>
-            <button class="large">1:1000000</button>
-        </div>
-        <div class="method">
-            <button class="keyboard">Entering with keyboard</button>
-            <button class="mouse">choosing an option</button>
-        </div>
-    </div>
-    <div class="main-operation">
+    <div class="game">
+        <div class="operations-selecting">
+            <span>Choose operation</span>
+            <div class="operations">
+                <button class="addition">+</button>
+                <button class="subtraction">-</button>
+                <button class="multiplication">x</button>
+                <button class="division">:</button>
+            </div>
+            <form>
+                <p>Range</p>
+                <div class="range">
+                    <input type="radio" id="small"
+                           name="range" value="1" checked="checked">
+                    <label for="small">1-10</label>
+                    <input type="radio" id="medium"
+                           name="range" value="2">
+                    <label for="medium">1-100</label>
+                    <input type="radio" id="large"
+                           name="range" value="3">
+                    <label for="large">1-10000</label>
+                </div>
 
-        <p class="numbers">4+4</p>
-        <div class="hint">
-            <button class="hint">hint</button>
-            <div class="hint-image"></div>
+            <div class="method">
+                <button class="keyboard">Entering answer with keyboard</button>
+                <button class="mouse">choosing an option</button>
+            </div>
+            <button class="start">start</button>
         </div>
-        <div class="comment">
-            <image></image>
-            <p>Great!!!
-            <p class="numbers"></p></p>
-        </div>
-        <div class="answer-boxes">
-            <button class="answer-1">1</button>
-            <button class="answer-2">2</button>
-            <button class="answer-3">3</button>
-        </div>
+        <div class="main-operation">
 
-    </div>
-    <div class="progress">
-        <p>Score: <span class="score">10/10</span></p>
+            <p class="question">a+b</p>
+            <div class="hint">
+                <button class="hint">hint</button>
+                <div class="hint-image"></div>
+            </div>
+            <div class="comment">
+                <image></image>
+                <p>Great!!!<p class="numbers"></p></p>
+            </div>
+            <div class="answer-boxes">
+                <button class="answer-1">X</button>
+                <button class="answer-2">Y</button>
+                <button class="answer-3">Z</button>
+            </div>
+
+        </div>
+        <div class="progress">
+            <p>Score: <span class="score">10/10</span></p>
+        </div>
     </div>
 </div>
 </body>

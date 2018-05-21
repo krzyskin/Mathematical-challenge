@@ -36,9 +36,15 @@
     font-family:  'Courgette', cursive, latin-ext;
 }
 .answer-boxes button{
-    width:75px;
-    height: 75px;
+    min-width:75px;
+    height:75px;
+    font-size:40px;
+    font-family:  'Courgette', cursive, latin-ext;
+
 }
 .progress{
     background-color:#806df8;
+}
+.range button:focus{
+    background-color: green;
 }

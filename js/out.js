@@ -79,7 +79,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n//# sourceURL=webpack:///./js/app.js?");
+eval("\n\n$(function () {\n\n    $('.start').on('click', function (e) {\n        e.preventDefault();\n        var factor = 0;\n        if (document.getElementById(\"small\").checked === true) {\n            factor = 1;\n        } else if (document.getElementById(\"medium\").checked === true) {\n            factor = 10;\n        } else if (document.getElementById(\"large\").checked === true) {\n            factor = 1000;\n        }\n\n        var num1 = Math.round(Math.random() * 5 * factor);\n        var num2 = Math.round(Math.random() * 5 * factor);\n        var sum = num1 + num2;\n\n        $('.question').text(num1 + '+' + num2);\n\n        var falseResult1 = 0;\n        var falseResult2 = 0;\n        do {\n            falseResult1 = Math.round(Math.random() * 10 * factor);\n            falseResult2 = Math.round(Math.random() * 10 * factor);\n        } while (falseResult1 == falseResult2 || falseResult1 == sum || falseResult2 == sum);\n\n        var array = [falseResult1, falseResult2, sum];\n\n        var sortedArray = array.sort();\n\n        $('.answer-1').text(sortedArray[0]);\n        $('.answer-2').text(sortedArray[1]);\n        $('.answer-3').text(sortedArray[2]);\n    });\n});\n\n//# sourceURL=webpack:///./js/app.js?");
 
 /***/ })
 
